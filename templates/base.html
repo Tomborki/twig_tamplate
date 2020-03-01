@@ -2,14 +2,11 @@
 <html>
     <head>
         {% block head %}
-            <link rel="stylesheet" href="style.css" />
-            <title>WEBORKY - {% block title %}{% endblock %}</title>
-            <link rel="stylesheet" href="templates/style/style.css">
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+            <title>{% block title %}{% endblock %}</title>
         {% endblock %}
     </head>
     <body>
-        <div id="main-div">{% block content %}{% endblock %}</div>
+        <div id="main">{% block content %}{% endblock %}</div>
         <div id="footer">
             {% block footer %}
                 &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
